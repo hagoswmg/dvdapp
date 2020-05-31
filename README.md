@@ -4,13 +4,13 @@ Spring is used so that classes of Spring beans declared using XML-based configur
 will be automatically registered if such classes are root resource classes or provider classes.
  
 ## Dependency
-Jersey Version 1.9
-Spring Version 3.2.4
+- Jersey Version 1.9
+- Spring Version 3.2.4
 
 
+## URL Mapping
 The app mocks DVD library catalog
 
-URL Mapping
 - Base URL from pom.xml --> localhost:8080/dvdapp
 - Prefix from web.xml   --> /webapi/*
 - Prefix from controller --> /resources and /dvds
