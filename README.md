@@ -23,3 +23,7 @@ Full Path
 
 
 ## Swagger Documentation
+1. Add dependencies 
+2. Get static content (swagger-ui)
+3. Configure swagger
+4. Annotate

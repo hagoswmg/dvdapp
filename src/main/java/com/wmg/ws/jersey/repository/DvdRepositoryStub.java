@@ -13,7 +13,7 @@ public class DvdRepositoryStub implements DvdRepository {
 		
 		dvdList.add(new DVD("Paul Dano", "Wildlife", "2018"));
 		dvdList.add(new DVD("Spike Lee", "Bamboozled", "2000"));
-		dvdList.add(new DVD("Claire Denis", "	Let the Sunshine In", "2017"));
+		dvdList.add(new DVD("Claire Denis", "Let the Sunshine In", "2017"));
 		
 		return dvdList;
 	}

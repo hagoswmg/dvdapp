@@ -11,7 +11,10 @@ import com.wmg.ws.jersey.model.DVD;
 import com.wmg.ws.jersey.repository.DvdRepository;
 import com.wmg.ws.jersey.repository.DvdRepositoryStub;
 
+import io.swagger.annotations.Api;
+
 @Path("/dvds")
+@Api(value = "Dvds")
 public class DvdResource {
 	
 	DvdRepository dvdRepository = new DvdRepositoryStub();
