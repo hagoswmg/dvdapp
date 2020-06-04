@@ -13,24 +13,21 @@ import io.swagger.jaxrs.config.BeanConfig;
 
 @ApplicationPath("/api")
 public class DvdappApplication extends Application {
-	
-	@Autowired
-	Environment env;
-	
+
 	public DvdappApplication(@Context ServletConfig servletConfig) {
 		ServletContext servletContext = servletConfig.getServletContext();
 		String contextPath = servletContext.getContextPath();
 		
 		BeanConfig beanConfig = new BeanConfig();
-		beanConfig.setVersion("1.1");
+		beanConfig.setVersion("1.0");
 		beanConfig.setTitle("DVD Catalog API");
-		beanConfig.setBasePath(contextPath + "/api");
+		beanConfig.setBasePath("/api");
 		beanConfig.setResourcePackage("com.wmg.ws.jersey");
+		beanConfig.setSchemes(new String[] {"http", "https"});
 		beanConfig.setScan(true);
 		
 		System.out.println("Servelet Context = " + servletContext);
 		System.out.println("Context Path = " + contextPath);
 		System.out.println("servletConfig.getServletName() = " + servletConfig.getServletName());
 	}
-
 }
