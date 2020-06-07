@@ -85,7 +85,7 @@
 		
 		<dependency>
 			<groupId>io.swagger</groupId>
-			<artifactId>swagger-jaxrs</artifactId>
+			<artifactId>swagger-jersey-jaxrs</artifactId>
 			<version>1.5.24</version>
 		</dependency>
 		
@@ -158,7 +158,7 @@
 					<replacements>
 						<replacement>
 							<token>https://petstore.swagger.io/v2/swagger.json</token>
-							<value>/api/swagger.json</value>
+							<value>/apidocs/swagger.json</value>
 						</replacement>
 					</replacements>
 				</configuration>
