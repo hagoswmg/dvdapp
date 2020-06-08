@@ -17,17 +17,5 @@
            http://www.springframework.org/schema/tx
            http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
         
-	<!-- Swagger Documentations -->   
-	<bean id="apiListingResource" class="io.swagger.jaxrs.listing.ApiListingResource" />
-	<bean id="swaggerSerializers" class="io.swagger.jaxrs.listing.SwaggerSerializers" scope="singleton" />
-	
-	<bean id="beanConfig" class="io.swagger.jaxrs.config.BeanConfig">
-		<property name="title" value="DVD Catalog API - Swagger Docs" />
-		<property name="version" value="1.0.0" />
-		<property name="basePath" value="/apidocs" />
-		<property name="schemes" value="http,https" />
-		<property name="resourcePackage" value="com.wmg.ws.jersey" />
-		<property name="scan" value="true" />
-	</bean>
 
 </beans>
